@@ -1,0 +1,20 @@
+<h1 >
+	<span style="background-color: #00ff00;">Article List<span >
+	</h1>
+<span style="background-color: #00ff00;">This article posted by writers <span>
+<table>
+	<tr>
+<th>Name</th>
+<th>Review Comment</th>
+</tr>
+<tr>
+<% @articles.each do |article| %>
+<td><%= article.name %></td>
+<td><%= article.review %></td>
+<td><%= link_to "Edit",edit_article_path(article) %></td>
+<td><%= link_to "Delete",article,:confirm =>" Are you sure?",:method => "delete"%></td>
+<br>
+</tr>
+<%end%>
+</table>
+<p><%= link_to "Add a new article", new_article_path %><p>
