@@ -20,6 +20,11 @@ gem 'omniauth-twitter'
 gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-linkedin'
+gem "twitter-bootstrap-rails", :group => :assets
+gem 'rails_admin'
+gem 'cancan'
+gem "thin"
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem "rspec-collection_matchers"
@@ -50,7 +55,7 @@ gem 'jquery-rails'
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+ #gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'

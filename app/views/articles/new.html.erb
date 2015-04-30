@@ -1,14 +1,22 @@
-<p bgcolor="#E6E6FA"><h1 >Add new article post </h1></p>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    
+<center style="background-color: #7FFFD4;"><p bgcolor="#E6E6FA"><h1 >Add new article post </h1></p>
 <%= form_for @article do |f| %>
-	  <p><%= f.label :name %>
-		<%= f.text_field :name %><br>
-	  </p>
+	  <div><%= f.label :name %></div>
+		<div>
+			<%= f.text_field :name %><br>
+	  </div>
 	   
-	    <p>
+	    <div>
 	    <%= f.label :review%><br>
-		<%= f.text_area :review %>
-	  </p>
-	  <p>
+		</div>
+		<div>
+      <%= f.text_area :review %>
+      </div>
+	 <div>
       <%= f.submit "Add new article post" %>
-	  </p>
+	  </div>
 	<% end %>
+</center>

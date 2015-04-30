@@ -234,11 +234,11 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
   require "omniauth-facebook"
-  #require 'omniauth-twitter'
-  #require 'omniauth-linkedin'
+  require 'omniauth-twitter'
+  require 'omniauth-linkedin'
   require 'omniauth-google-oauth2'
-  #config.omniauth :twitter, "JEEZ5LXFyzTwmTCWYRXMPqc9d", "ovXeOtwaO3gVl0Hm4W76py4TDssXdLrXCmyjm832eXdw9gLZqA"
-  #config.omniauth :linkedin, "78ftoq0tgzaq62", "Hami8qWdGjwJJ482"
+  config.omniauth :twitter, "JEEZ5LXFyzTwmTCWYRXMPqc9d", "ovXeOtwaO3gVl0Hm4W76py4TDssXdLrXCmyjm832eXdw9gLZqA"
+  config.omniauth :linkedin, "78ftoq0tgzaq62", "Hami8qWdGjwJJ482"
   config.omniauth :facebook, "655107177936513", "3027590f59e15c99ab5f983e8b0da39f"
   config.omniauth :google_oauth2,"455374131463-ctm0gmr7selq62euvaups9n84tmfbie8.apps.googleusercontent.com","jrFmNxBNCRKEpoMhcuTOOB4h",{ access_type: "offline", approval_prompt: ""}
 
